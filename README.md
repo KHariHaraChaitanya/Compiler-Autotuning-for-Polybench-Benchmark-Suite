@@ -27,17 +27,22 @@ Linux
 Usage:
 
 Clone the Repository:
-git clone https://github.com/username/autotuning-polybench.git
+
+git clone https://github.com/KHariHaraChaitanya/Compiler-Autotuning-for-Polybench-Benchmark-Suite.git
 cd autotuning-polybench
 
 Set Up the Environment:
+
 export OMP_NUM_THREADS=8
 
 Compile and Execute:
+
 python3 autotuning.py --explore-threads --command "./kernel"
 
 Run with PAPI Profiling:
+
 python3 autotuning.py --profile-papi --command "./kernel"
 
 Generate Machine Info:
+
 python3 autotuning.py --machine-info
