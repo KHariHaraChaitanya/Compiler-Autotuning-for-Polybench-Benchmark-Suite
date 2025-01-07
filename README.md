@@ -24,11 +24,9 @@ PAPI (Performance API), PAPI compatible CPU (Eg. Intel XeonE5 CPU)
 Python 3.x
 Linux 
 
-Usage
-Clone the Repository:
+Usage:
 
-bash
-Copy code
+Clone the Repository:
 git clone https://github.com/username/autotuning-polybench.git
 cd autotuning-polybench
 
@@ -36,13 +34,10 @@ Set Up the Environment:
 export OMP_NUM_THREADS=8
 
 Compile and Execute:
-python3 autotuning.py --explore-threads --command "./correlation"
+python3 autotuning.py --explore-threads --command "./kernel"
 
 Run with PAPI Profiling:
-python3 autotuning.py --profile-papi --command "./correlation"
+python3 autotuning.py --profile-papi --command "./kernel"
 
 Generate Machine Info:
-
-bash
-Copy code
 python3 autotuning.py --machine-info
